@@ -1,0 +1,20 @@
+[package]
+name = "spl-staking"
+version = "0.1.0"
+description = "SPL Token Staking Program"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "spl_staking"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { version = "=0.31.1", features = ["derive", "init-if-needed"] }
+anchor-spl = { version = "=0.31.1", features = ["token"] }

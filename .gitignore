@@ -1,0 +1,17 @@
+# Build artifacts
+target/
+test-ledger/
+
+# Node modules
+node_modules/
+.yarn/
+
+# Solana keypairs - NEVER commit these
+*.json
+!tsconfig.json
+!package.json
+!Anchor.toml
+
+# IDL and types (optional - some include these)
+# target/idl/
+# target/types/
